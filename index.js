@@ -1,11 +1,11 @@
 var katzDeliLine = [];
+var number = 0;
 
-function takeANumber(katzDeliLine , name){
-  katzDeliLine.push(name)
-  var number = katzDeliLine.length;
-      /// var position = number + 1;
+function takeANumber(katzDeliLine){
+  number = number + 1;
+  katzDeliLine.push(number)
       ///^^ when tested gave an array index of 2 for the first person. Just ommited.
-  return 'Welcome, ' + name +'. You are number ' + number + ' in line.'; 
+  return 'Welcome. You are number ' + number+ ' in line.'; 
 }
 
 ///Works
